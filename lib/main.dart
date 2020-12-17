@@ -25,6 +25,7 @@ class DSIApp extends StatelessWidget {
 }
 
 
+// ignore: must_be_immutable
 class DSIPage extends StatefulWidget {
   final String title = 'My First App - DSI/BSI/UFRPE';
   int clicks;
@@ -175,6 +176,7 @@ class DSIMainBodyWidget extends StatelessWidget {
 }
 
 
+// ignore: must_be_immutable
 class HomePage extends StatefulWidget {
   int clicks;
 
@@ -184,6 +186,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  // ignore: non_constant_identifier_names
   void Back() async {
     //função pra buscar o valor dos clicks na segunda tela mandado pelo pop
     final value = await Navigator.push(
